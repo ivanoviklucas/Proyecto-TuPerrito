@@ -3,13 +3,14 @@ let caracteristicasRaza = {}; // Datos del JSON de características
 let razaActiva = "";
 let jsonListo = false; // Controla si el JSON ya se cargó
 
-// ---------------- Crear buscador ----------------
+// ---------------- Crear buscador e info ----------------
 function crearBuscador() {
   const contenedor = document.getElementById("perrichou");
   contenedor.innerHTML = `
     <input type="text" placeholder="Buscar raza de perro..." id="buscadorRaza"/>
     <button id="buscador">Buscar</button>
     <div id="contenedorTarjetas"></div>
+    <h1 id="contenedorInfo">Selecciona una categoría</h1> <!-- Siempre visible -->
   `;
   document.getElementById("buscador").addEventListener("click", filtrarRazas);
 }
@@ -22,6 +23,7 @@ function filtrarRazas() {
     crearTarjetaUnica(razaEncontrada);
   } else {
     document.getElementById("contenedorTarjetas").innerHTML = "";
+    document.getElementById("contenedorInfo").innerHTML = "Raza no encontrada";
   }
 }
 
@@ -43,13 +45,13 @@ function crearTarjetaUnica(raza) {
             <button data-categoria="cuidado">Cuidado</button>
             <button data-categoria="comportamiento">Comportamiento</button>
             <button data-categoria="historia">Historia</button>
-            <h1 id="contenedorInfo"></h1>
           </div>
         </div>
       `;
 
-      const contenedorBotones = document.querySelector(".boton-caracteristicas");
-      contenedorBotones.querySelectorAll("button").forEach(btn => {
+      // Agregar eventos a los botones
+      const contenedorBotones = contenedorTarjetas.querySelectorAll(".boton-caracteristicas button");
+      contenedorBotones.forEach(btn => {
         btn.addEventListener("click", manejarClickBoton);
         btn.addEventListener("touchstart", manejarClickBoton);
       });
@@ -60,9 +62,9 @@ function crearTarjetaUnica(raza) {
 // ---------------- Manejar click en categoría ----------------
 function manejarClickBoton(event) {
   const categoria = event.target.dataset.categoria;
-  if (!categoria || !razaActiva || !jsonListo) return; // Espera JSON
+  if (!categoria || !razaActiva || !jsonListo) return;
 
-  const textoMostrar = caracteristicasRaza[razaActiva][categoria] || "Información no disponible.";
+  const textoMostrar = caracteristicasRaza[razaActiva]?.[categoria] || "Información no disponible.";
   const contenedorInfo = document.getElementById("contenedorInfo");
   if (contenedorInfo) {
     contenedorInfo.innerHTML = textoMostrar;
@@ -72,7 +74,7 @@ function manejarClickBoton(event) {
 // ---------------- Iniciar App ----------------
 async function iniciarApp() {
   try {
-    // 1. Crear buscador inmediatamente
+    // 1. Crear buscador e info visibles de inmediato
     crearBuscador();
 
     // 2. Cargar lista de razas
@@ -80,8 +82,8 @@ async function iniciarApp() {
     const data = await res.json();
     razasGlobal = Object.keys(data.message);
 
-    // 3. Cargar JSON de características en paralelo
-    const resJson = await fetch("/imagenes/CaracteristicasRaza.JSON");
+    // 3. Cargar JSON de características
+    const resJson = await fetch("imagenes/CaracteristicasRaza.JSON");
     caracteristicasRaza = await resJson.json();
     jsonListo = true; // JSON listo, los botones ya pueden mostrar info
 
