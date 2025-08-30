@@ -46,7 +46,7 @@ body {
   box-shadow: 0 0 8px rgba(249, 65, 68, 0.8);
 }
 
-/* Botón */
+/* Botón Buscar */
 #buscador {
   padding: 12px 20px;
   border: none;
@@ -96,7 +96,34 @@ body {
   text-transform: capitalize;
   text-align: center;
 }
- #contenedorInfo {
+
+/* Botones de características */
+.boton-caracteristicas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.boton-caracteristicas button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #facfcf; /* pastel suave */
+  color: #444;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.boton-caracteristicas button:hover {
+  background: #f8bebe;
+  transform: scale(1.05);
+}
+
+#contenedorInfo {
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
@@ -169,3 +196,4 @@ body {
     line-height: 1.3;
   }
 }
+
