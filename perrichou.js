@@ -1,94 +1,91 @@
-let razasGlobal = []; // Guarda la lista original de razas
+let razasGlobal = []; // Lista de todas las razas
+let caracteristicasRaza = {}; // Datos del JSON de características
+let razaActiva = "";
 
-async function llamarPerrito() {
+// ---------------- Cargar lista de razas y JSON ----------------
+async function iniciarApp() {
   try {
-    const res = await fetch(`https://dog.ceo/api/breeds/list/all`);
+    // 1. Obtener razas de la API Dog CEO
+    const res = await fetch("https://dog.ceo/api/breeds/list/all");
     const data = await res.json();
-    razasGlobal = Object.keys(data.message); // Guardamos las razas
+    razasGlobal = Object.keys(data.message);
 
-    crearBuscador(); // Creamos el input y botón
-  } catch (error) {
-    console.error("Error:", error);
+    // 2. Obtener JSON de características
+    const resJson = await fetch("/imagenes/CaracteristicasRaza.JSON");
+    caracteristicasRaza = await resJson.json();
+
+    // 3. Crear el buscador una vez que todo esté listo
+    crearBuscador();
+  } catch (err) {
+    console.error("Error cargando datos:", err);
   }
 }
 
-llamarPerrito();
-async function crearBuscador() {
-  fetch("/imagenes/CaracteristicasRaza.JSON")
-  .then(res => res.json())
-  .then(data => {
-    caracteristicasRaza = data;
-  })
-  .catch(err => console.error("Error cargando CaracteristicasRaza.JSON:", err));
-  const contenedor = document.getElementById("perrichou");
+iniciarApp();
 
-  // Creamos el buscador (input + botón) una sola vez
+// ---------------- Crear buscador ----------------
+function crearBuscador() {
+  const contenedor = document.getElementById("perrichou");
   contenedor.innerHTML = `
     <input type="text" placeholder="Buscar raza de perro..." id="buscadorRaza"/>
     <button id="buscador">Buscar</button>
     <div id="contenedorTarjetas"></div>
   `;
-
-  // Cuando se hace click en "Buscar", se ejecuta filtrarRazas
   document.getElementById("buscador").addEventListener("click", filtrarRazas);
 }
 
-function manejarClickBoton(event) {
-  if (event.target.tagName === "BUTTON") {
-    const categoria = event.target.dataset.categoria;
-    const contenedorBotones = document.querySelector(".boton-caracteristicas");
- console.log(categoria)
- let textoMostrar = caracteristicasRaza[razaActiva][categoria];
- let contenedorInfo = document.getElementById("contenedorInfo");
-  contenedorInfo.innerHTML = textoMostrar
+// ---------------- Filtrar raza ----------------
+function filtrarRazas() {
+  const buscador = document.getElementById("buscadorRaza").value.toLowerCase();
+  const razaEncontrada = razasGlobal.find(r => r.toLowerCase().includes(buscador));
+  if (razaEncontrada) {
+    crearTarjetaUnica(razaEncontrada);
+  } else {
+    document.getElementById("contenedorTarjetas").innerHTML = "";
   }
 }
 
-function ActivaBoton() {
-  contenedorTarjetas.addEventListener("click");
-}
-let razaActiva = "";
+// ---------------- Crear tarjeta única ----------------
 function crearTarjetaUnica(raza) {
   razaActiva = raza;
   const contenedorTarjetas = document.getElementById("contenedorTarjetas");
-  contenedorTarjetas.innerHTML = ""; // Limpiamos lo anterior
+  contenedorTarjetas.innerHTML = "";
 
   fetch(`https://dog.ceo/api/breed/${raza}/images/random`)
-    .then((res) => res.json())
-    .then((info) => {
-      // Mostramos solo una tarjeta
+    .then(res => res.json())
+    .then(info => {
       contenedorTarjetas.innerHTML = `
         <div class="contenedorbuscador">
           <img src="${info.message}" alt="${raza}">
           <h2>${raza.charAt(0).toUpperCase() + raza.slice(1)}</h2>
-          <div class= "boton-caracteristicas">
-      <button data-categoria="alimentacion">Alimentación</button>
-      <button data-categoria="cuidado">Cuidado</button>
-      <button data-categoria="comportamiento">Comportamiento</button>
-      <button data-categoria="historia">Historia</button>
-      <h1 id = "contenedorInfo"></h1>
+          <div class="boton-caracteristicas">
+            <button data-categoria="alimentacion">Alimentación</button>
+            <button data-categoria="cuidado">Cuidado</button>
+            <button data-categoria="comportamiento">Comportamiento</button>
+            <button data-categoria="historia">Historia</button>
+            <h1 id="contenedorInfo"></h1>
           </div>
         </div>
       `;
-        const contenedorBotones = document.querySelector(".boton-caracteristicas");
-      contenedorBotones.addEventListener("click", manejarClickBoton);
+
+      // -------------- Eventos de botones --------------
+      const contenedorBotones = document.querySelector(".boton-caracteristicas");
+      contenedorBotones.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", manejarClickBoton);
+        btn.addEventListener("touchstart", manejarClickBoton); // Para móviles
+      });
     })
-    .catch((error) => console.error("Error al obtener imagen:", error));
-    
+    .catch(err => console.error("Error al obtener imagen:", err));
 }
 
-function filtrarRazas() {
-  const buscador = document.getElementById("buscadorRaza").value.toLowerCase();
+// ---------------- Manejar click en categoría ----------------
+function manejarClickBoton(event) {
+  const categoria = event.target.dataset.categoria;
+  if (!categoria || !caracteristicasRaza[razaActiva]) return;
 
-  // Filtramos la raza buscada (una sola)
-  const razaEncontrada = razasGlobal.find((raza) =>
-    raza.toLowerCase().includes(buscador)
-  );
-
-  if (razaEncontrada) {
-    crearTarjetaUnica(razaEncontrada); // Mostramos solo una tarjeta
-  } else {
-    // Si no se encuentra, limpiamos el contenedor
-    document.getElementById("contenedorTarjetas").innerHTML = "";
+  const textoMostrar = caracteristicasRaza[razaActiva][categoria] || "Información no disponible.";
+  const contenedorInfo = document.getElementById("contenedorInfo");
+  if (contenedorInfo) {
+    contenedorInfo.innerHTML = textoMostrar;
   }
 }
