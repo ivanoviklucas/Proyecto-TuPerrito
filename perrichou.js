@@ -83,7 +83,7 @@ async function iniciarApp() {
     razasGlobal = Object.keys(data.message);
 
     // 3. Cargar JSON de características
-    const resJson = await fetch("imagenes/CaracteristicasRaza.JSON");
+    const resJson = await fetch("CaracteristicasRaza.JSON");
     caracteristicasRaza = await resJson.json();
     jsonListo = true; // JSON listo, los botones ya pueden mostrar info
 
