@@ -1,0 +1,235 @@
+{
+  "affenpinscher": {
+    "alimentacion": "Alta en proteínas y grasas saludables. Controlar cantidades para evitar sobrepeso.",
+    "cuidado": "Cepillado regular y corte de pelo cada 2 meses.",
+    "comportamiento": "Alegre, valiente y cariñoso. Desconfiado con extraños.",
+    "historia": "Originario de Alemania, criado como perro de compañía y ratonero.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Affenpinscher-186.html"
+  },
+  "african": {
+    "alimentacion": "La alimentación de los perros salvajes africanos se basa principalmente en la carne, ya que son depredadores. Cazan una variedad de presas, desde pequeños roedores y aves hasta antílopes medianos como impalas, gacelas y ñus. También pueden consumir carroña si está disponible. ",
+    "cuidado": "Los cuidados de un perro africano varían según la raza, pero en general, es crucial considerar su origen, tamaño y nivel de actividad. Alimentación balanceada, ejercicio adecuado y atención a la higiene son fundamentales. Además, es importante la socialización temprana y el adiestramiento para razas grandes o con instintos protectores.",
+    "comportamiento": "El grupo social es casi lo más importante entre los perros salvajes africanos. Se compone básicamente de una pareja dominante que procrea, un grupo de adultos que no lo hacen y la descendencia bajo su cuidado. El número de miembros va usualmente entre 8 y 15 perros. El grupo es muy unido, y tiene la particularidad de que todos los machos son parientes entre sí y lo mismo las hembras, pero no son parientes entre sexos. Esto se debe a que entre los 14 y los 30 meses las hembras hermanas abandonan el grupo familiar y se unen a otro grupo donde falten hembras en edad de procrear; en cambio los machos no abandonan su grupo de origen\n Cada sexo tiene un sistema de jerarquía separado, y solo los dominantes de cada escala social procrean. Los miembros de cada grupo son muy unidos. Ante situaciones de conflicto, como la competencia por la comida, ambos contrincantes toman actitudes de sumisión y se evita cualquier pelea innecesaria.",
+    "historia": "El perro salvaje africano, también conocido como licaón (Lycaon pictus), es un cánido que históricamente habitó gran parte de África, desde zonas desérticas hasta montañas. Actualmente, se encuentra en peligro de extinción debido a la pérdida de hábitat y las amenazas humanas, como enfermedades y conflictos con el ganado.",
+    "_fuente": "https://www.fci.be/en/nomenclature/African-Hunting-Dog-xxx.html"
+  },
+  "akita": {
+    "alimentacion": "Dieta rica en proteínas de calidad. Controlar articulaciones.",
+    "cuidado": "Cepillado frecuente por muda abundante.",
+    "comportamiento": "Fiel, reservado y protector.",
+    "historia": "Originario de Japón, símbolo de lealtad y guardianía.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Akita-255.html"
+  },
+  "afghan_hound": {
+    "alimentacion": "Dieta equilibrada con proteínas de alta calidad.",
+    "cuidado": "Requiere cepillado frecuente debido a su pelaje largo.",
+    "comportamiento": "Independiente y reservado, pero afectuoso con su familia.",
+    "historia": "Originario de Afganistán, utilizado para la caza mayor en terrenos montañosos.",
+    "_fuente": "https://www.infobae.com/america/perrosygatos/2022/12/26/cuales-son-las-15-razas-de-perros-mas-inteligentes-del-mundo/"
+  },
+  "airedale_terrier": {
+    "alimentacion": "Alimento rico en proteínas para mantener su energía.",
+    "cuidado": "Requiere un baño y recorte regular de su pelaje.",
+    "comportamiento": "Activo, inteligente y leal.",
+    "historia": "Desarrollado en el valle del río Aire en Inglaterra para cazar nutrias y tejones.",
+    "_fuente": "https://www.akc.org/dog-breeds/airedale-terrier/"
+  },
+  "akbash": {
+    "alimentacion": "Dieta rica en proteínas y grasas saludables.",
+    "cuidado": "Cepillado regular para mantener su pelaje blanco y denso.",
+    "comportamiento": "Protector, independiente y tranquilo.",
+    "historia": "Perro de pastoreo originario de Turquía, utilizado para proteger rebaños de depredadores.",
+    "_fuente": "https://www.akc.org/dog-breeds/akbash/"
+  },
+  "alaskan_klee_kai": {
+    "alimentacion": "Alimento de alta calidad con proteínas magras.",
+    "cuidado": "Cepillado regular y ejercicio diario.",
+    "comportamiento": "Activo, curioso y leal.",
+    "historia": "Criado en Alaska como una versión en miniatura del Husky Siberiano.",
+    "_fuente": "https://www.akc.org/dog-breeds/alaskan-klee-ka/"
+  },
+  "american_bulldog": {
+    "alimentacion": "Dieta rica en proteínas para mantener su musculatura.",
+    "cuidado": "Cepillado semanal y ejercicio regular.",
+    "comportamiento": "Valiente, leal y protector.",
+    "historia": "Utilizado en el trabajo agrícola y como perro de guardia en Estados Unidos.",
+    "_fuente": "https://en.wikipedia.org/wiki/American_Bulldog"
+  },
+
+  "basenji": {
+    "alimentacion": "Dieta equilibrada con proteínas de alta calidad.",
+    "cuidado": "Cepillado frecuente por su pelaje corto y denso.",
+    "comportamiento": "Inteligente, independiente y enérgico.",
+    "historia": "Originario de África Central, utilizado para la caza mayor en terrenos selváticos.",
+    "fuente": "https://www.akc.org/dog-breeds/basenji/"
+  },
+  "beagle": {
+    "alimentacion": "Dieta balanceada con proteínas de calidad.",
+    "cuidado": "Cepillado regular y ejercicio diario.",
+    "comportamiento": "Sociable, curioso y con un agudo sentido del olfato.",
+    "historia": "Desarrollado en Inglaterra para la caza menor, especialmente liebres.",
+    "fuente": "https://www.akc.org/dog-breeds/beagle/"
+  },
+  "bluetick": {
+    "alimentacion": "Dieta rica en proteínas para mantener su energía.",
+    "cuidado": "Cepillado regular y ejercicio intenso.",
+    "comportamiento": "Determinado, leal y con un fuerte instinto de caza.",
+    "historia": "Originado en Estados Unidos, utilizado para la caza de mapaches y zorros.",
+    "fuente": "https://www.akc.org/dog-breeds/bluetick-coonhound/"
+  },
+  "borzoi": {
+    "alimentacion": "Alimento rico en proteínas y bajo en grasas para mantener su agilidad.",
+    "cuidado": "Cepillado frecuente para evitar enredos en su pelaje largo.",
+    "comportamiento": "Elegante, tranquilo y afectuoso con su familia.",
+    "historia": "Originario de Rusia, utilizado como perro de caza de lobos.",
+    "fuente": "https://www.akc.org/dog-breeds/borzoi/"
+  },
+  "bouvier": {
+    "alimentacion": "Dieta rica en proteínas y equilibrada para mantener su musculatura.",
+    "cuidado": "Cepillado regular y recorte ocasional del pelaje.",
+    "comportamiento": "Inteligente, trabajador y protector.",
+    "historia": "Perro de granja belga utilizado para el pastoreo y protección del ganado.",
+    "fuente": "https://www.akc.org/dog-breeds/bouvier-des-flandres/"
+  },
+  "brabancon": {
+    "alimentacion": "Dieta equilibrada con proteínas de calidad.",
+    "cuidado": "Cepillado regular, especialmente si es de pelo largo.",
+    "comportamiento": "Alegre, valiente y muy afectuoso.",
+    "historia": "Originario de Bélgica, desarrollado como perro de compañía y guardián.",
+    "fuente": "https://www.akc.org/dog-breeds/brussels-griffon/"
+  },
+  "briard": {
+    "alimentacion": "Dieta rica en proteínas para sostener su energía y musculatura.",
+    "cuidado": "Cepillado frecuente para mantener su pelaje largo y evitar nudos.",
+    "comportamiento": "Leal, protector y muy inteligente.",
+    "historia": "Originario de Francia, usado como perro pastor y guardián de rebaños.",
+    "fuente": "https://www.akc.org/dog-breeds/briard/"
+  },
+  "buhund": {
+    "alimentacion": "Dieta equilibrada con proteínas de alta calidad.",
+    "cuidado": "Cepillado regular para mantener el pelaje limpio y saludable.",
+    "comportamiento": "Activo, inteligente y leal.",
+    "historia": "Originario de Noruega, utilizado como perro de pastoreo y compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/norwegian-buhund/"
+  },
+  "bulldog": {
+    "alimentacion": "Dieta equilibrada baja en calorías para evitar sobrepeso.",
+    "cuidado": "Revisar arrugas y cepillado moderado.",
+    "comportamiento": "Valiente, afectuoso y paciente.",
+    "historia": "Originario de Inglaterra, criado para peleas de toros y compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/bulldog/"
+  },
+  "bullterrier": {
+    "alimentacion": "Alimento rico en proteínas y control de peso.",
+    "cuidado": "Cepillado regular y ejercicio diario.",
+    "comportamiento": "Valiente, inteligente y enérgico.",
+    "historia": "Originario de Inglaterra, creado para peleas de perros y compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/staffordshire-bull-terrier/"
+  },
+  "cattledog": {
+    "alimentacion": "Dieta rica en proteínas para perros activos.",
+    "cuidado": "Cepillado regular y ejercicio intenso.",
+    "comportamiento": "Inteligente, trabajador y protector del ganado.",
+    "historia": "Originario de Australia, utilizado como perro de pastoreo.",
+    "fuente": "https://www.akc.org/dog-breeds/australian-cattle-dog/"
+  },
+  "chow": {
+    "alimentacion": "Dieta balanceada con proteínas de calidad.",
+    "cuidado": "Cepillado frecuente y cuidado de su pelaje denso.",
+    "comportamiento": "Independiente, reservado y leal.",
+    "historia": "Originario de China, utilizado como perro de caza y guardián.",
+    "fuente": "https://www.akc.org/dog-breeds/chow-chow/"
+  },
+  "clumber": {
+    "alimentacion": "Dieta rica en proteínas y control de peso.",
+    "cuidado": "Cepillado regular y cuidado de oídos.",
+    "comportamiento": "Tranquilo, amigable y afectuoso.",
+    "historia": "Originario de Inglaterra, usado para caza menor.",
+    "fuente": "https://www.akc.org/dog-breeds/clumber-spaniel/"
+  },
+  "cockapoo": {
+    "alimentacion": "Dieta balanceada rica en proteínas.",
+    "cuidado": "Cepillado frecuente y corte de pelo según necesidad.",
+    "comportamiento": "Cariñoso, activo y sociable.",
+    "historia": "Híbrido entre Cocker Spaniel y Poodle, creado como perro de compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/cockapoo/"
+  },
+  "cotondetulear": {
+    "alimentacion": "Dieta equilibrada con proteínas de calidad.",
+    "cuidado": "Cepillado frecuente y cuidado dental.",
+    "comportamiento": "Alegre, juguetón y sociable.",
+    "historia": "Originario de Madagascar, utilizado como perro de compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/coton-de-tulear/"
+  },
+  "dane": {
+    "alimentacion": "Dieta rica en proteínas y control de peso para perros grandes.",
+    "cuidado": "Cepillado regular y ejercicio moderado.",
+    "comportamiento": "Tranquilo, amigable y protector.",
+    "historia": "Originario de Alemania, utilizado como perro guardián y compañía.",
+    "fuente": "https://www.akc.org/dog-breeds/great-dane/"
+  },
+  "appenzeller": {
+    "alimentacion": "La alimentación del boyero de Appenzell debe ser rica en proteínas de alta calidad, provenientes de fuentes animales como carne de res, pollo, pavo, cordero, etc. Es crucial evitar el sobrepeso, ya que puede causar problemas articulares y de salud en esta raza. Se recomienda consultar con un veterinario o criador para establecer un plan nutricional adecuado para cada perro, considerando su edad, nivel de actividad y estado de salud. ",
+    "cuidado": "El cuidado del pelo es sencillo y suele ser suficiente con el cepillado dos veces por semana. Asimismo, es conveniente bañar al appenzeller solo cuando esté realmente sucio. Estos perros boyeros necesitan mucho ejercicio diario debido a su carácter dinámico e infatigable",
+    "comportamiento": "l Boyero de Appenzell es muy cariñoso con su familia y suele llevarse bien con el ganado, otros perros y animales domésticos cuando se socializa adecuadamente desde cachorro.",
+    "historia": "Ya en 1853, el Boyero de Appenzell fue descrito por primera vez como un perro boyero multicolor, de ladridos agudos y pelo corto, de tipo Sptiz, utilizado para proteger la finca y pastorear el ganado en su región natal de Appenzell, Suiza. Impulsado por el promotor de la raza, Max Siber, el Appenzeller fue designado raza propia por la Sociedad Cinológica Suiza en 1898.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Appenzeller-Sennenhund-52.html"
+  },
+  "bernese": {
+    "alimentacion": "https://dogfydiet.com/blog/alimentacion-natural-para-perros/alimentacion-boyero-de-berna",
+    "cuidado": "l Boyero de Berna, también conocido como Bernese Mountain Dog, requiere cuidados específicos para mantener su salud y bienestar. Estos cuidados incluyen ejercicio moderado diario, socialización y entrenamiento constantes, cepillado regular para su abundante pelaje, y atención a posibles problemas de salud como displasia de cadera o hinchazón.",
+    "comportamiento": "Los boyeros son perros simpáticos a quienes les encanta que se les incluya en todos los aspectos de la vida familiar, y son unos compañeros fantásticos. Son cariñosos, pacientes y especialmente buenos con los niños, a los que protegerán si es necesario. ",
+    "historia": "El Boyero de Berna, originario de la región de Berna en Suiza, tiene una rica historia como perro de granja y de trabajo. Sus ancestros, incluyendo mastines romanos, llegaron a la zona hace siglos. Los Boyeros de Berna fueron utilizados para tareas como conducir ganado, cuidar granjas y tirar de cargas pesadas. Aunque su popularidad disminuyó con la llegada de la maquinaria, clubes de raza se formaron para preservar la raza.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Berner-Sennenhund-5.html"
+  },
+  "boxer": {
+    "alimentacion": "Alto contenido proteico para su energía. Evitar sobrepeso.",
+    "cuidado": "Necesita ejercicio diario. Revisar arrugas de la cara.",
+    "comportamiento": "Activo, juguetón, excelente con niños.",
+    "historia": "Criado en Alemania como perro de caza mayor y guardia.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Boxer-144.html"
+  },
+  "chihuahua": {
+    "alimentacion": "Porciones pequeñas varias veces al día. Evitar hipoglucemia.",
+    "cuidado": "Abrigo en climas fríos. Higiene dental frecuente.",
+    "comportamiento": "Valiente, alerta y muy apegado a su dueño.",
+    "historia": "Originario de México, considerado la raza más pequeña del mundo.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Chihuahua-218.html"
+  },
+  "collie": {
+    "alimentacion": "Proteínas: La base de la alimentación de un border collie debe ser proteína de alta calidad. Puedes usar carne de pollo, pavo, ternera, cerdo o pescado, cocinados de forma natural. La carne magra aporta los aminoácidos necesarios para mantener su masa muscular y energía.",
+    "cuidado": "El cuidado de un Collie, ya sea Border Collie o Collie de pelo largo, implica atención regular al pelaje, dieta adecuada, ejercicio y estimulación mental. Un cepillado semanal es generalmente suficiente para los Collies de pelo liso, mientras que los de pelo largo necesitan cepillado frecuente para evitar enredos, especialmente detrás de las orejas y los codos. También es importante recortar las uñas y limpiar los oídos regularmente. Los Collies son perros inteligentes y enérgicos que requieren ejercicio diario y actividades que estimulen su mente.",
+    "comportamiento": "El Collie, tanto el de pelo largo como el Border Collie, se caracteriza por ser inteligente, leal y afectuoso, especialmente con su familia. Son perros activos que disfrutan de la compañía y la estimulación mental y física. Tienden a ser protectores con su familia y pueden ser reservados con extraños, mostrando a veces instintos de pastoreo como mordisquear los talones. ",
+    "historia": "La raza Collie tiene sus orígenes en Escocia, donde se utilizaban para el pastoreo de ovejas y ganado.Se cree que su nombre proviene de las ovejas colley, que eran negras, o de la palabra gaélica colley, que significa útil, relacionado con su función de pastoreo. Los romanos, al conquistar Gran Bretaña, pudieron haber introducido perros que se cruzaron con los perros escoceses nativos, dando origen al Collie moderno. La popularidad de la raza se extendió gracias a la reina Victoria, quien se interesó por ellos durante sus estancias en Escocia.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Collie-XXX.html"
+  },
+  "corgi": {
+    "alimentacion": "",
+    "cuidado": "",
+    "comportamiento": "",
+    "historia": "",
+    "_fuente": "https://www.fci.be/en/nomenclature/Cardigan-Welsh-Corgi-305.html"
+  },
+  "dachshund": {
+    "alimentacion": "",
+    "cuidado": "",
+    "comportamiento": "",
+    "historia": "",
+    "_fuente": "https://www.fci.be/en/nomenclature/Dachshund-148.html"
+  },
+  "dalmatian": {
+    "alimentacion": "",
+    "cuidado": "",
+    "comportamiento": "",
+    "historia": "",
+    "_fuente": "https://www.fci.be/en/nomenclature/Dalmatian-166.html"
+  },
+  "husky": {
+    "alimentacion": "Dieta rica en proteínas y grasas, ideal para perros activos.",
+    "cuidado": "Cepillado intenso en época de muda. Necesita mucho ejercicio.",
+    "comportamiento": "Energético, independiente, buen perro de trabajo.",
+    "historia": "Criado por los Chukchi en Siberia como perro de tiro de trineo.",
+    "_fuente": "https://www.fci.be/en/nomenclature/Siberian-Husky-270.html"
+  }
+
+}
